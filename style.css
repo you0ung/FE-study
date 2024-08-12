@@ -1,0 +1,71 @@
+h1, h2, ul, p {
+    margin:0;
+    padding:3px;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-image:url(/img/background.jpg);
+    background-attachment: fixed;
+}
+
+.wrapper {
+    background-color: lightgray;
+    width:800px;
+    margin:0 auto;
+}
+
+ .header {
+     background-image: url("/img/cats.jpg");
+     color:white;
+     height:600px;
+     text-align: center;
+}
+
+.header *.profile {
+    margin-top:50px;
+}
+
+ .header h1 {
+     background-color: antiquewhite;
+     width: 300px;
+     color:blue;
+     margin:20px auto;
+ }
+
+ .header p {
+     background-color: #000;
+     color: #666;
+     width:400px;
+     margin: 0 auto;
+     padding:2px;
+ }
+
+*.section {
+    background-color: white;
+    margin:20px;
+    padding:15px;
+}
+
+.section h2 {
+    color:blue;
+    border-bottom:2px solid #ddd;
+    padding:10px;
+}
+
+.section li {
+    padding: 5px 10px;
+}
+
+.section li:hover {
+    color:blue;
+    border-color: blue;
+}
+
+.footer {
+    background-color: black;
+    color:#777;
+}
