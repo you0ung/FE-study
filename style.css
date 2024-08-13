@@ -3,10 +3,6 @@ h1, h2, ul, p {
     padding:3px;
 }
 
-li {
-    list-style-type: none;
-}
-
 body {
     background-image:url(/img/background.jpg);
     background-attachment: fixed;
@@ -46,6 +42,10 @@ body {
 
 *.section {
     background-color: white;
+    background-image:url(/img/kitty.png);
+    background-repeat: no-repeat;
+    background-position: top 10px right 20px;
+    background-size: 50px;
     margin:20px;
     padding:15px;
 }
@@ -57,12 +57,20 @@ body {
 }
 
 .section li {
-    padding: 5px 10px;
+    padding: 5px 50px 10px;
+    background-image: url(/img/foot-print.png);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    background-size: 30px;
 }
 
 .section li:hover {
     color:blue;
     border-color: blue;
+}
+
+.skills {
+    background-image : url(/img/kitty2.png);
 }
 
 .footer {
