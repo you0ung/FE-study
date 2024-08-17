@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    background-image: url(/img/background_tiger.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body, ul, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+   list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto 100px;
+}
+
+.header {
+    text-align: center;
+}
+
+.logo {
+    font-family: 'LOTTERIACHAB';
+    color: red;
+    text-shadow: 1px 3px yellow;
+    display: block;
+    font-size: 100px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.menu {
+    width: 400px;
+    margin: 30px auto;
+    color: darkred;
+}
+
+.menu li {
+    margin-bottom: 5px;
+}
+
+.menu li a {
+    border: 3px solid;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    display: block;
+}
+
+.menu li a:hover {
+    color: white;
+}
+
+.section {
+    background-image: url(/img/wood.jpg);
+    background-size: cover;
+    background-color: saddlebrown;
+    color: antiquewhite;
+    margin: 50px;
+    padding: 30px;
+    border: 10px solid #3f2320;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.6)
+}
+
+.section h1 {
+    margin-bottom: 20px;
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+    font-size: 90px;
+    line-height: 250px;
+    font-family: "Merienda", cursive;
+}
+
+.section:nth-child(even) {
+    border: 10px solid blue;
+}
+
+
+.section:nth-child(even) h1 {
+    background-position: left;
+    text-align: right;
+    padding: 20px;
+}
+
+.section h1.animal1 {
+    background-image: url(/img/squirrel.png);
+    color: orange;
+}
+
+.section h1.animal2 {
+    background-image: url(/img/otter.png);
+    color: pink;
+}
+
+.section h1.animal3 {
+    background-image: url(/img/reindeer.png);
+    color: chocolate;
+}
+
+.section h1.animal4 {
+    background-image: url(/img/weasel.png);
+    color: cornflowerblue;
+}
+
+.section h1.animal5 {
+    background-image: url(/img/hare.png);
+    color: aquamarine;
+}
+
+.section p {
+    padding-top: 10px;
+    line-height: 1.6;
+}
+
+.section p strong {
+    background-color: saddlebrown;
+    padding: 0 10px;
+    border-radius: 10px;
+    color: yellow;
+}
+
+.footer {
+    background-color: saddlebrown;
+    text-align: center;
+    color: antiquewhite;
+    border-bottom: 10px solid rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.footer p {
+    padding: 20px 0;
+    display: inline-block;
+    width: 500px;
+}
+
+.footer:before {
+
+}
