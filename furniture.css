@@ -1,0 +1,162 @@
+a {
+    text-decoration: none;
+}
+
+h1, h2, p, body {
+    margin: 0;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.clearfix::after {
+    content:' ';
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 150px auto;
+
+}
+
+.sidebar,
+.contents {
+    border-radius: 5px;
+    background-color: white;
+}
+
+.sidebar {
+    float: right;
+    width: 250px;
+    margin-left: 20px;
+    text-align: center;
+    color: #555;
+}
+
+.sidebar-section {
+    margin: 20px 0;
+}
+
+
+.contents {
+    padding: 30px;
+    overflow: hidden;
+}
+
+.sofa {
+    width: 80%;
+    margin-top: -40px;
+}
+
+.title {
+    line-height: 1;
+    color: #605d5d;
+}
+
+.star {
+   background-image: url("/img/star.png");
+
+}
+
+.price {
+    color: #605d5d;
+    font-size: 30px;
+}
+
+.price::before {
+    content: '$';
+    font-size: 0.7em;
+    margin-right: 3px;
+    opacity: 0.6;
+}
+
+.button {
+    background-color: #6797b2;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 5px 20px;
+    padding: 12px 0;
+    letter-spacing: 0.3em;
+}
+
+.button.share {
+    background-color: #6797cc;
+}
+
+.footer {
+    opacity: 0.5;
+}
+
+.section h2 {
+    color: #6797b2;
+    border-bottom: 2px solid #bbb;
+    margin-bottom: 20px;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.message:last-child {
+    margin-bottom: 0;
+}
+
+.message-profile {
+    float: left;
+}
+
+.message-profile::before,
+.message-profile::after {
+    content:' ';
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.message-profile::before {
+    border-color: white white white #ddd;
+    display: none;
+}
+
+.message-profile::after {
+    border-color: white #ddd white white;
+
+}
+
+.message.answer .message-profile {
+    float: right;
+}
+
+.message.answer .message-profile::before {
+    display: inline-block;
+}
+
+.message.answer .message-profile::after {
+    display: none;
+}
+
+.message-profile img {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.message-text {
+    background-color: #ddd;
+    overflow: hidden;
+    margin-left:10px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+
