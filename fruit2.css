@@ -1,0 +1,107 @@
+/* CSS reset */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+.clearfix {
+    content:' ';
+    display: block;
+    clear: both;
+}
+
+
+.cover {
+    color: white;
+    background-image: url("/img/watermelon.jpg");
+    background-size: cover;
+    height: 50vh;
+    font-size: 10vw;
+    position: relative;
+}
+
+.cover h1 {
+    font-family: "Jersey 10", sans-serif;
+    font-size: 150px;
+    background-color: orangered;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+    padding: 0 0.4em 0.1em;
+}
+
+.wrapper {
+    width: 980px;
+    margin:50px auto;
+}
+
+.section-contents {
+    display: inline-block;
+}
+
+.section {
+    background-color: white;
+    margin: 50px 0;
+    padding: 30px;
+    color: #999;
+    text-align: right;
+    position: relative;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    width: 200px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 50px;
+    border-bottom: 10px solid;
+    display: inline-block;
+}
+
+.section.strawberry h2 {
+    color: orangered;
+}
+
+.section.orange h2 {
+    color: orange;
+}
+
+.section.kiwi h2 {
+    color: gold;
+}
+
+.section p {
+    float: left;
+    width: 250px;
+    margin-right: 25px;
+}
+
+.section p:last-child {
+    margin-right: 0;
+}
+
+.section-cover {
+    left: 0;
+    top: 0;
+    position: absolute;
+    margin: 0 -150px;
+    transform: translateY(-2%);
+}
+
+.section:nth-child(even) {
+    text-align: left;
+}
+
+.section:nth-child(even) .section-cover {
+    left: auto;
+    right: 0;
+}
