@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'RixInooAriDuriR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS set*/
+body, ul, h1, h2, p {
+    margin:0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #222;
+    color: white;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin:0 auto;
+    padding: 30px;
+}
+
+.timeline {
+    margin: 0 40px;
+    padding: 50px 0;
+    position: relative;
+}
+
+.timeline:before {
+    content:' ';
+    background-color: dodgerblue;
+    width: 4px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 100px 0 -100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    width: 50%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.timeline-item:before {
+    content: ' ';
+    background-color: #222;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    margin: 50px -20px;
+    border-radius: 50%;
+    border: 5px solid dodgerblue;
+}
+
+.timeline-item:after {
+    content: ' ';
+    background-color: dodgerblue;
+    position: absolute;
+    width: 21px;
+    height: 5px;
+    top: 65px;
+    right: 0;
+    margin: 0 18px;
+}
+
+.timeline-item:nth-child(even):after {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    margin-left: auto;
+    margin-top: -270px;
+    margin-bottom: -120px;
+}
+
+.timeline-item:nth-child(even):before {
+    left: 0;
+}
+
+.tour {
+    background-color: #000;
+    min-height: 400px;
+}
+
+.tour-cover {
+    width: 100%;
+}
+
+.tour-contents {
+    padding: 30px;
+}
+
+.tour-contents h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: 'RixInooAriDuriR';
+}
+
+.tour-contents h2 strong {
+    display: block;
+    color: #999;
+}
+
+.tour-contents p {
+    color: #999;
+    line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+    .timeline-item,
+    .timeline-item:nth-child(even) {
+        width: auto;
+        margin: 0 0 40px 50px;
+    }
+
+    .timeline:before {
+        left: 45px;
+        transform: none;
+    }
+
+    .timeline-item:before,
+    .timeline-item:after {
+        left: 0;
+    }
+}
